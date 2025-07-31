@@ -1,2 +1,2 @@
-# aetherflow
+# aetherflow.tech
 AI Automation Agency
