@@ -1315,19 +1315,19 @@
             
             // In a real implementation, this is where you would submit to Netlify
             // For this demo, we'll simulate a successful submission
-            consultationForm.style.display = 'none';
-            successMessage.style.display = 'block';
+            // consultationForm.style.display = 'none';
+            // successMessage.style.display = 'block';
             
             // In a real implementation, you would use:
-            // fetch("/", {
-            //   method: "POST",
-            //   body: new FormData(consultationForm),
-            // })
-            // .then(() => {
-            //   consultationForm.style.display = 'none';
-            //   successMessage.style.display = 'block';
-            // })
-            // .catch(error => alert(error));
+            fetch("/", {
+              method: "POST",
+              body: new FormData(consultationForm),
+            })
+            .then(() => {
+              consultationForm.style.display = 'none';
+              successMessage.style.display = 'block';
+            })
+            .catch(error => alert(error));
         });
         
         // Close success message
